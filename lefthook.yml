@@ -9,4 +9,4 @@ pre-push:
   commands:
     validate:
       glob: '*.{js,jsx,ts,tsx,.mjs}'
-      run: bun run validate:typecheck
+      run: bun run typecheck
