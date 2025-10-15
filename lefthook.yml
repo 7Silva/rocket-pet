@@ -1,12 +1,12 @@
 pre-commit:
   commands:
     check:
-      run: bunx format {staged_files}
-      glob: '*.{js,jsx,ts,tsx,.mjs}'
+      run: bunx run format {staged_files}
+      glob: '*.{js,jsx,ts,tsx,.mjs,json}'
       stage_fixed: true
 
 pre-push:
   commands:
     validate:
       glob: '*.{js,jsx,ts,tsx,.mjs}'
-      run: bunx validate:typecheck
+      run: bunx run validate:typecheck
