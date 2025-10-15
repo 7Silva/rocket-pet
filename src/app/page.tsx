@@ -5,7 +5,7 @@ type Props = {
 const Component = ({ title }: Props) => {
   return (
     <div>
-      <h1>Welcome to Rocket Pet Component!</h1>
+      <h1>Welcome to Rocket Pet!</h1>
     </div>
   );
 };
@@ -13,7 +13,7 @@ const Component = ({ title }: Props) => {
 export default function Home() {
   return (
     <div>
-      <h1>Welcome to Rocket Pet Home!</h1>
+      <h1>Welcome to Rocket Pet!</h1>
 
       <Component title={2} />
     </div>
