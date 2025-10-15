@@ -1,0 +1,16 @@
+services:
+  postgres:
+    image: postgres:17
+    container_name: rocketpet-db
+    restart: always
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: rocketpet
+      POSTGRES_PASSWORD: rocketpet
+      POSTGRES_DB: rocketpet
+    volumes:
+      - ./pgdata:/var/lib/postgresql/data
+
+volumes:
+  pgdata:
